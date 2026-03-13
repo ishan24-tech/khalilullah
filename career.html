@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply Here</title>
+<link rel="stylesheet" href="cssstyle.css">
+</head>
+
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			<img src="logo.png" alt="Logo">
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Projects</a></li>
+			<li><a href="career.html">Careers</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section id="career">
+  <h2>Join Our Team</h2>
+  <p>Fill the form below to apply for a position in our company.</p>
+
+  <form name="career" method="POST" data-netlify="true" enctype="multipart/form-data">
+    
+    <!-- Required for Netlify -->
+    <input type="hidden" name="form-name" value="career">
+
+    <div>
+      <label>Full Name</label><br>
+      <input type="text" name="name" required>
+    </div>
+
+    <div>
+      <label>Email Address</label><br>
+      <input type="email" name="email" required>
+    </div>
+
+    <div>
+      <label>Phone Number</label><br>
+      <input type="tel" name="phone" required>
+    </div>
+
+    <div>
+  <label>Gender</label><br>
+  <select name="gender" required>
+    <option value="">Select Gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+    <div>
+  <label>Position Applying For</label><br>
+  <select name="position" required>
+    <option value="">Select a Position</option>
+    <option value="Graphic Designer">Graphic Designer</option>
+  <option value="UI/UX Designer">UI/UX Designer</option>
+  <option value="Frontend Developer">Frontend Developer</option>
+  <option value="Backend Developer">Backend Developer</option>
+  <option value="Full Stack Developer">Full Stack Developer</option>
+  <option value="Web Designer">Web Designer</option>
+  <option value="WordPress Developer">WordPress Developer</option>
+  <option value="Mobile App Developer">Mobile App Developer</option>
+  <option value="Digital Marketer">Digital Marketer</option>
+  <option value="Content Creator">Content Creator</option>
+  <option value="SEO Specialist">SEO Specialist</option>
+  <option value="Social Media Manager">Social Media Manager</option>
+  <option value="Project Manager">Project Manager</option>
+  <option value="Intern">Intern</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+    <div>
+      <label>Upload Any Certificate</label><br>
+      <input type="file" name="certificate" required>
+    </div>
+
+    <br>
+    <button type="submit">Apply Now</button>
+
+  </form>
+</section>
+
+<footer>
+	<p>© 2026 ALKITAB DIGITAL ENTERPRISES. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/2349126235939" class="whatsapp" target="_blank">
+	WHATSAPP
+</a>
+<script src="script.js"></script>
+
+</body>
+</html>
